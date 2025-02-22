@@ -142,7 +142,7 @@
                                                 $unidad = null;
                                                                                if ($detalle->producto->unidad_medida == 'KILOGRAMOS' && $detalle->cantidad < 1) {
                                                                                 $unidad = 'GRAMOS';
-                                                    } elseif ($$detalle->producto->unidad_medida == 'KILOGRAMOS' && $detalle->cantidad > 1) {
+                                                    } elseif ($detalle->producto->unidad_medida == 'KILOGRAMOS' && $detalle->cantidad > 1) {
                                                         $unidad = 'KILOGRAMOS';
                                                     } elseif ($detalle->producto->unidad_medida == 'LITROS' && $detalle->cantidad < 1) {
                                                         $unidad = 'LITROS';
